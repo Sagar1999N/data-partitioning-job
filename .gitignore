@@ -22,3 +22,97 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+
+# Eclipse
+.classpath
+.project
+.settings/
+.factorypath
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# VS Code
+.vscode/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Data directories
+data/raw/    # But you might want to keep small sample data
+*.csv        # Large data files shouldn't be in git
+*.parquet
+*.avro
+*.json
+*.orc
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Docker
+docker-data/  # Database data volumes.env.prod
+.env.prod
+
+# Parquet files
+*.parquet
+
+# Hadoop/Spark files
+*.crc
+_SUCCESS
+.success
+
+# Common data files to ignore
+*.csv
+*.json
+*.txt
+*.log
