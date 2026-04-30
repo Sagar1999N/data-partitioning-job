@@ -78,10 +78,10 @@ public class SparkPartitioningJob {
 
 		SparkSession spark = SparkSession.builder().appName("DataPartitioningJob").master("local")
 				.config("spark.sql.session.timeZone", "UTC")
-			    .config("spark.driver.memory", "384m")
-			    .config("spark.executor.memory", "384m")
-			    .config("spark.driver.maxResultSize", "128m")
-			    .config("spark.default.parallelism", "2")
+//			    .config("spark.driver.memory", "384m")
+//			    .config("spark.executor.memory", "384m")
+//			    .config("spark.driver.maxResultSize", "128m")
+//			    .config("spark.default.parallelism", "2")
 			    .config("spark.sql.adaptive.enabled", "true").config("spark.driver.host", "127.0.0.1")
 				.config("spark.driver.bindAddress", "127.0.0.1").getOrCreate();
 
